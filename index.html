@@ -26,5 +26,14 @@
             <button ng-click="addTodo()">Add Todo</button>
         </div>
         
+        <div ng-controller="MainController">
+            <h3>Books List</h3>
+            <div ng-repeat="book in books.list">
+                <li>{{ book }}</li>
+            </div>
+            <br>
+            <input type="text" name="bookItem" ng-model="bookItem">
+            <button ng-click="addBook(books.list, bookItem)">Add Book</button>
+        </div>
     </body>
 </html>

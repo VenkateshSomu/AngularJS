@@ -3,4 +3,10 @@ app.controller("MainController", ["$scope", function($scope){
     $scope.addTodo = function(){
         $scope.list.push($scope.todoItem)
     }
+    $scope.books = {
+        list: ["Book1", "Book2","Book3","Book4"]
+    }
+    $scope.addBook = function(itemList, bookItem){
+        itemList.push(bookItem)
+    }
 }]);
